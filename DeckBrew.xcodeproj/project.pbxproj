@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1284B837E6B509DE5AA562B4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA75C490E376F7BF892CEB5B /* libPods.a */; };
+		7A1B8EE11A1DC2D10083431C /* DBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EE01A1DC2D10083431C /* DBRequest.m */; };
+		7A1B8EE51A1DC4460083431C /* DBCardRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EE41A1DC4460083431C /* DBCardRequest.m */; };
+		7A1B8EE81A1DC47C0083431C /* DBCardsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EE71A1DC47C0083431C /* DBCardsRequest.m */; };
+		7A1B8EEB1A1DC8260083431C /* DBCardSetsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EEA1A1DC8260083431C /* DBCardSetsRequest.m */; };
+		7A1B8EEE1A1DD4330083431C /* DBAPIWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EED1A1DD4330083431C /* DBAPIWrapper.m */; };
+		7A1B8EF11A1DDEFD0083431C /* DBCardSetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EF01A1DDEFD0083431C /* DBCardSetRequest.m */; };
+		7A1B8EF41A1DE1280083431C /* DBCardTypesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EF31A1DE1280083431C /* DBCardTypesRequest.m */; };
+		7A1B8EF71A1DE5F00083431C /* DBCardSubtypesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1B8EF61A1DE5F00083431C /* DBCardSubtypesRequest.m */; };
+		7A32AAA51A34C328005ACA07 /* DBCardColorsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A32AAA41A34C328005ACA07 /* DBCardColorsRequest.m */; };
+		7A32AAAD1A34C710005ACA07 /* DBCardSupertypesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A32AAAC1A34C710005ACA07 /* DBCardSupertypesRequest.m */; };
+		7A32AAB01A34D4C4005ACA07 /* DBCardEdition.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A32AAAF1A34D4C4005ACA07 /* DBCardEdition.m */; };
+		7A39199E1A2109F1005E68B9 /* DBCardsFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A39199D1A2109F1005E68B9 /* DBCardsFixture.m */; };
+		7A3919A01A210FA7005E68B9 /* DBCardSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A39199F1A210FA7005E68B9 /* DBCardSpec.m */; };
+		7A3919A31A211D4E005E68B9 /* DBSetsFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3919A21A211D4E005E68B9 /* DBSetsFixture.m */; };
+		7A3919A51A211EA6005E68B9 /* DBCardSetSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3919A41A211EA6005E68B9 /* DBCardSetSpec.m */; };
+		7A3919A81A212514005E68B9 /* DBResponseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3919A61A212466005E68B9 /* DBResponseSpec.m */; };
+		7A3F11951A35419F000E82FA /* DBCardEditionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F11941A35419F000E82FA /* DBCardEditionTest.m */; };
+		7A8A4C501A1EFFDE00B489D1 /* DBCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C4F1A1EFFDE00B489D1 /* DBCard.m */; };
+		7A8A4C531A1F1CE700B489D1 /* DBCardSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C521A1F1CE700B489D1 /* DBCardSet.m */; };
+		7A8A4C5C1A205E9B00B489D1 /* DBCardSetsRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C5B1A205E9B00B489D1 /* DBCardSetsRequestSpec.m */; };
+		7A8A4C5E1A205F5100B489D1 /* DBCardSetRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C5D1A205F5100B489D1 /* DBCardSetRequestSpec.m */; };
+		7A8A4C601A2060DF00B489D1 /* DBCardTypesRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C5F1A2060DF00B489D1 /* DBCardTypesRequestSpec.m */; };
+		7A8A4C621A20617000B489D1 /* DBCardSubtypesRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C611A20617000B489D1 /* DBCardSubtypesRequestSpec.m */; };
+		7A8A4C641A2063C200B489D1 /* DBCardsRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C631A2063C200B489D1 /* DBCardsRequestSpec.m */; };
+		7A8A4C661A20671800B489D1 /* DBCardRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C651A20671800B489D1 /* DBCardRequestSpec.m */; };
+		7A8A4C681A2067B700B489D1 /* DBAPIWrapperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C671A2067B700B489D1 /* DBAPIWrapperSpec.m */; };
+		7A8A4C6E1A2096AA00B489D1 /* DBResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C6D1A2096AA00B489D1 /* DBResponse.m */; };
+		7AE93F671A3534D900864A48 /* DBCardSupertypesRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE93F661A3534D900864A48 /* DBCardSupertypesRequestTest.m */; };
+		7AFE91CB1A1DBFC70006165A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91CA1A1DBFC70006165A /* main.m */; };
+		7AFE91CE1A1DBFC70006165A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91CD1A1DBFC70006165A /* AppDelegate.m */; };
+		7AFE91D11A1DBFC70006165A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91D01A1DBFC70006165A /* ViewController.m */; };
+		7AFE91D41A1DBFC70006165A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AFE91D21A1DBFC70006165A /* Main.storyboard */; };
+		7AFE91D61A1DBFC70006165A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AFE91D51A1DBFC70006165A /* Images.xcassets */; };
+		7AFE91D91A1DBFC70006165A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AFE91D71A1DBFC70006165A /* LaunchScreen.xib */; };
+		A11ECA8C8C817FBEB30877C4 /* libPods-DeckBrewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B10799671C915ECEB7D5EAA /* libPods-DeckBrewTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AFE91DF1A1DBFC70006165A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AFE91BD1A1DBFC60006165A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AFE91C41A1DBFC60006165A;
+			remoteInfo = Magic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B10799671C915ECEB7D5EAA /* libPods-DeckBrewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DeckBrewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A2C53AFF48F894B19EF851 /* Pods-DeckBrewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeckBrewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeckBrewTests/Pods-DeckBrewTests.release.xcconfig"; sourceTree = "<group>"; };
+		276152B44D2EF1EDBBAC28C8 /* Pods-DeckBrewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeckBrewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeckBrewTests/Pods-DeckBrewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		72C03D9BE63B4C3DA44658F3 /* Pods-MagicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MagicTests/Pods-MagicTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A1B8EDF1A1DC2D10083431C /* DBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = DBRequest.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		7A1B8EE01A1DC2D10083431C /* DBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBRequest.m; sourceTree = "<group>"; };
+		7A1B8EE31A1DC4450083431C /* DBCardRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardRequest.h; sourceTree = "<group>"; };
+		7A1B8EE41A1DC4460083431C /* DBCardRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DBCardRequest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7A1B8EE61A1DC47C0083431C /* DBCardsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardsRequest.h; sourceTree = "<group>"; };
+		7A1B8EE71A1DC47C0083431C /* DBCardsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DBCardsRequest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7A1B8EE91A1DC8260083431C /* DBCardSetsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardSetsRequest.h; sourceTree = "<group>"; };
+		7A1B8EEA1A1DC8260083431C /* DBCardSetsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DBCardSetsRequest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7A1B8EEC1A1DD4330083431C /* DBAPIWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAPIWrapper.h; sourceTree = "<group>"; };
+		7A1B8EED1A1DD4330083431C /* DBAPIWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DBAPIWrapper.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7A1B8EEF1A1DDEFD0083431C /* DBCardSetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardSetRequest.h; sourceTree = "<group>"; };
+		7A1B8EF01A1DDEFD0083431C /* DBCardSetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DBCardSetRequest.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		7A1B8EF21A1DE1280083431C /* DBCardTypesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardTypesRequest.h; sourceTree = "<group>"; };
+		7A1B8EF31A1DE1280083431C /* DBCardTypesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardTypesRequest.m; sourceTree = "<group>"; };
+		7A1B8EF51A1DE5F00083431C /* DBCardSubtypesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardSubtypesRequest.h; sourceTree = "<group>"; };
+		7A1B8EF61A1DE5F00083431C /* DBCardSubtypesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSubtypesRequest.m; sourceTree = "<group>"; };
+		7A32AAA31A34C328005ACA07 /* DBCardColorsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardColorsRequest.h; sourceTree = "<group>"; };
+		7A32AAA41A34C328005ACA07 /* DBCardColorsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardColorsRequest.m; sourceTree = "<group>"; };
+		7A32AAAB1A34C710005ACA07 /* DBCardSupertypesRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardSupertypesRequest.h; sourceTree = "<group>"; };
+		7A32AAAC1A34C710005ACA07 /* DBCardSupertypesRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSupertypesRequest.m; sourceTree = "<group>"; };
+		7A32AAAE1A34D4C4005ACA07 /* DBCardEdition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardEdition.h; sourceTree = "<group>"; };
+		7A32AAAF1A34D4C4005ACA07 /* DBCardEdition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardEdition.m; sourceTree = "<group>"; };
+		7A39199C1A2109F1005E68B9 /* DBCardsFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardsFixture.h; sourceTree = "<group>"; };
+		7A39199D1A2109F1005E68B9 /* DBCardsFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardsFixture.m; sourceTree = "<group>"; };
+		7A39199F1A210FA7005E68B9 /* DBCardSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSpec.m; sourceTree = "<group>"; };
+		7A3919A11A211D4E005E68B9 /* DBSetsFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBSetsFixture.h; sourceTree = "<group>"; };
+		7A3919A21A211D4E005E68B9 /* DBSetsFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSetsFixture.m; sourceTree = "<group>"; };
+		7A3919A41A211EA6005E68B9 /* DBCardSetSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSetSpec.m; sourceTree = "<group>"; };
+		7A3919A61A212466005E68B9 /* DBResponseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBResponseSpec.m; sourceTree = "<group>"; };
+		7A3F11941A35419F000E82FA /* DBCardEditionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardEditionTest.m; sourceTree = "<group>"; };
+		7A8A4C4E1A1EFFDE00B489D1 /* DBCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCard.h; sourceTree = "<group>"; };
+		7A8A4C4F1A1EFFDE00B489D1 /* DBCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCard.m; sourceTree = "<group>"; };
+		7A8A4C511A1F1CE700B489D1 /* DBCardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardSet.h; sourceTree = "<group>"; };
+		7A8A4C521A1F1CE700B489D1 /* DBCardSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSet.m; sourceTree = "<group>"; };
+		7A8A4C5B1A205E9B00B489D1 /* DBCardSetsRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSetsRequestSpec.m; sourceTree = "<group>"; };
+		7A8A4C5D1A205F5100B489D1 /* DBCardSetRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSetRequestSpec.m; sourceTree = "<group>"; };
+		7A8A4C5F1A2060DF00B489D1 /* DBCardTypesRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardTypesRequestSpec.m; sourceTree = "<group>"; };
+		7A8A4C611A20617000B489D1 /* DBCardSubtypesRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSubtypesRequestSpec.m; sourceTree = "<group>"; };
+		7A8A4C631A2063C200B489D1 /* DBCardsRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardsRequestSpec.m; sourceTree = "<group>"; };
+		7A8A4C651A20671800B489D1 /* DBCardRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardRequestSpec.m; sourceTree = "<group>"; };
+		7A8A4C671A2067B700B489D1 /* DBAPIWrapperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAPIWrapperSpec.m; sourceTree = "<group>"; };
+		7A8A4C6C1A2096AA00B489D1 /* DBResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBResponse.h; sourceTree = "<group>"; };
+		7A8A4C6D1A2096AA00B489D1 /* DBResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBResponse.m; sourceTree = "<group>"; };
+		7ABF410D1A26968E004F0667 /* DeckBrewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckBrewWrapper.h; sourceTree = "<group>"; };
+		7AE93F661A3534D900864A48 /* DBCardSupertypesRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSupertypesRequestTest.m; sourceTree = "<group>"; };
+		7AFE91C51A1DBFC70006165A /* DeckBrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckBrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AFE91C91A1DBFC70006165A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AFE91CA1A1DBFC70006165A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AFE91CC1A1DBFC70006165A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AFE91CD1A1DBFC70006165A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7AFE91CF1A1DBFC70006165A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7AFE91D01A1DBFC70006165A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7AFE91D31A1DBFC70006165A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AFE91D51A1DBFC70006165A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		7AFE91D81A1DBFC70006165A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		7AFE91DE1A1DBFC70006165A /* DeckBrewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeckBrewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AFE91E31A1DBFC70006165A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		893645EB25C164F2EC929F12 /* Pods-MagicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MagicTests/Pods-MagicTests.release.xcconfig"; sourceTree = "<group>"; };
+		90FC183B66DAE3DF395D21F4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A07405D9CFB1A496E7619382 /* libPods-MagicTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MagicTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D1FE0FCB07981FBD6B2706 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CA75C490E376F7BF892CEB5B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AFE91C21A1DBFC60006165A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1284B837E6B509DE5AA562B4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AFE91DB1A1DBFC70006165A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11ECA8C8C817FBEB30877C4 /* libPods-DeckBrewTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A7BA7B0559D6BEB6E99F8E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA75C490E376F7BF892CEB5B /* libPods.a */,
+				A07405D9CFB1A496E7619382 /* libPods-MagicTests.a */,
+				0B10799671C915ECEB7D5EAA /* libPods-DeckBrewTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53C47C956ECD21B8FBC6C149 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1FE0FCB07981FBD6B2706 /* Pods.debug.xcconfig */,
+				90FC183B66DAE3DF395D21F4 /* Pods.release.xcconfig */,
+				72C03D9BE63B4C3DA44658F3 /* Pods-MagicTests.debug.xcconfig */,
+				893645EB25C164F2EC929F12 /* Pods-MagicTests.release.xcconfig */,
+				276152B44D2EF1EDBBAC28C8 /* Pods-DeckBrewTests.debug.xcconfig */,
+				26A2C53AFF48F894B19EF851 /* Pods-DeckBrewTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A1B8EE21A1DC2DC0083431C /* DeckBrew Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				7ABF410D1A26968E004F0667 /* DeckBrewWrapper.h */,
+				7A1B8EEC1A1DD4330083431C /* DBAPIWrapper.h */,
+				7A1B8EED1A1DD4330083431C /* DBAPIWrapper.m */,
+				7A8A4C4E1A1EFFDE00B489D1 /* DBCard.h */,
+				7A8A4C4F1A1EFFDE00B489D1 /* DBCard.m */,
+				7A32AAA31A34C328005ACA07 /* DBCardColorsRequest.h */,
+				7A32AAA41A34C328005ACA07 /* DBCardColorsRequest.m */,
+				7A32AAAE1A34D4C4005ACA07 /* DBCardEdition.h */,
+				7A32AAAF1A34D4C4005ACA07 /* DBCardEdition.m */,
+				7A1B8EE31A1DC4450083431C /* DBCardRequest.h */,
+				7A1B8EE41A1DC4460083431C /* DBCardRequest.m */,
+				7A8A4C511A1F1CE700B489D1 /* DBCardSet.h */,
+				7A8A4C521A1F1CE700B489D1 /* DBCardSet.m */,
+				7A1B8EEF1A1DDEFD0083431C /* DBCardSetRequest.h */,
+				7A1B8EF01A1DDEFD0083431C /* DBCardSetRequest.m */,
+				7A1B8EE91A1DC8260083431C /* DBCardSetsRequest.h */,
+				7A1B8EEA1A1DC8260083431C /* DBCardSetsRequest.m */,
+				7A1B8EE61A1DC47C0083431C /* DBCardsRequest.h */,
+				7A1B8EE71A1DC47C0083431C /* DBCardsRequest.m */,
+				7A1B8EF51A1DE5F00083431C /* DBCardSubtypesRequest.h */,
+				7A1B8EF61A1DE5F00083431C /* DBCardSubtypesRequest.m */,
+				7A32AAAB1A34C710005ACA07 /* DBCardSupertypesRequest.h */,
+				7A32AAAC1A34C710005ACA07 /* DBCardSupertypesRequest.m */,
+				7A1B8EF21A1DE1280083431C /* DBCardTypesRequest.h */,
+				7A1B8EF31A1DE1280083431C /* DBCardTypesRequest.m */,
+				7A1B8EDF1A1DC2D10083431C /* DBRequest.h */,
+				7A1B8EE01A1DC2D10083431C /* DBRequest.m */,
+				7A8A4C6C1A2096AA00B489D1 /* DBResponse.h */,
+				7A8A4C6D1A2096AA00B489D1 /* DBResponse.m */,
+			);
+			name = "DeckBrew Wrapper";
+			path = DeckBrew;
+			sourceTree = "<group>";
+		};
+		7A1B8EF81A1DE7D50083431C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AFE91D71A1DBFC70006165A /* LaunchScreen.xib */,
+				7AFE91D51A1DBFC70006165A /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7A39199B1A2109CD005E68B9 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				7A39199C1A2109F1005E68B9 /* DBCardsFixture.h */,
+				7A39199D1A2109F1005E68B9 /* DBCardsFixture.m */,
+				7A3919A11A211D4E005E68B9 /* DBSetsFixture.h */,
+				7A3919A21A211D4E005E68B9 /* DBSetsFixture.m */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		7AFE91BC1A1DBFC60006165A = {
+			isa = PBXGroup;
+			children = (
+				7AFE91C71A1DBFC70006165A /* Demo App */,
+				7A1B8EE21A1DC2DC0083431C /* DeckBrew Wrapper */,
+				7AFE91E11A1DBFC70006165A /* DeckBrew Wrapper Specs */,
+				7AFE91C61A1DBFC70006165A /* Products */,
+				53C47C956ECD21B8FBC6C149 /* Pods */,
+				2A7BA7B0559D6BEB6E99F8E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7AFE91C61A1DBFC70006165A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AFE91C51A1DBFC70006165A /* DeckBrew.app */,
+				7AFE91DE1A1DBFC70006165A /* DeckBrewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AFE91C71A1DBFC70006165A /* Demo App */ = {
+			isa = PBXGroup;
+			children = (
+				7AFE91CC1A1DBFC70006165A /* AppDelegate.h */,
+				7AFE91CD1A1DBFC70006165A /* AppDelegate.m */,
+				7AFE91CF1A1DBFC70006165A /* ViewController.h */,
+				7AFE91D01A1DBFC70006165A /* ViewController.m */,
+				7AFE91D21A1DBFC70006165A /* Main.storyboard */,
+				7A1B8EF81A1DE7D50083431C /* Resources */,
+				7AFE91C81A1DBFC70006165A /* Supporting Files */,
+			);
+			name = "Demo App";
+			path = DeckBrew;
+			sourceTree = "<group>";
+		};
+		7AFE91C81A1DBFC70006165A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AFE91C91A1DBFC70006165A /* Info.plist */,
+				7AFE91CA1A1DBFC70006165A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7AFE91E11A1DBFC70006165A /* DeckBrew Wrapper Specs */ = {
+			isa = PBXGroup;
+			children = (
+				7A39199B1A2109CD005E68B9 /* Fixtures */,
+				7A8A4C671A2067B700B489D1 /* DBAPIWrapperSpec.m */,
+				7A3F11941A35419F000E82FA /* DBCardEditionTest.m */,
+				7A8A4C651A20671800B489D1 /* DBCardRequestSpec.m */,
+				7A8A4C5D1A205F5100B489D1 /* DBCardSetRequestSpec.m */,
+				7A3919A41A211EA6005E68B9 /* DBCardSetSpec.m */,
+				7A8A4C5B1A205E9B00B489D1 /* DBCardSetsRequestSpec.m */,
+				7A39199F1A210FA7005E68B9 /* DBCardSpec.m */,
+				7A8A4C631A2063C200B489D1 /* DBCardsRequestSpec.m */,
+				7A8A4C611A20617000B489D1 /* DBCardSubtypesRequestSpec.m */,
+				7AE93F661A3534D900864A48 /* DBCardSupertypesRequestTest.m */,
+				7A8A4C5F1A2060DF00B489D1 /* DBCardTypesRequestSpec.m */,
+				7A3919A61A212466005E68B9 /* DBResponseSpec.m */,
+				7AFE91E21A1DBFC70006165A /* Supporting Files */,
+			);
+			name = "DeckBrew Wrapper Specs";
+			path = DeckBrewTests;
+			sourceTree = "<group>";
+		};
+		7AFE91E21A1DBFC70006165A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AFE91E31A1DBFC70006165A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AFE91C41A1DBFC60006165A /* DeckBrew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AFE91E81A1DBFC70006165A /* Build configuration list for PBXNativeTarget "DeckBrew" */;
+			buildPhases = (
+				7EF1D62B126AC0B34CB2D898 /* Check Pods Manifest.lock */,
+				7AFE91C11A1DBFC60006165A /* Sources */,
+				7AFE91C21A1DBFC60006165A /* Frameworks */,
+				7AFE91C31A1DBFC60006165A /* Resources */,
+				AB9A524551DA5AC65805DE0C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeckBrew;
+			productName = Magic;
+			productReference = 7AFE91C51A1DBFC70006165A /* DeckBrew.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7AFE91DD1A1DBFC70006165A /* DeckBrewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AFE91EB1A1DBFC70006165A /* Build configuration list for PBXNativeTarget "DeckBrewTests" */;
+			buildPhases = (
+				30EDB811577115C965BB31B3 /* Check Pods Manifest.lock */,
+				7AFE91DA1A1DBFC70006165A /* Sources */,
+				7AFE91DB1A1DBFC70006165A /* Frameworks */,
+				7AFE91DC1A1DBFC70006165A /* Resources */,
+				6D84747623307EA5266C5B4C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AFE91E01A1DBFC70006165A /* PBXTargetDependency */,
+			);
+			name = DeckBrewTests;
+			productName = MagicTests;
+			productReference = 7AFE91DE1A1DBFC70006165A /* DeckBrewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AFE91BD1A1DBFC60006165A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Otavio Cordeiro";
+				TargetAttributes = {
+					7AFE91C41A1DBFC60006165A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					7AFE91DD1A1DBFC70006165A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 7AFE91C41A1DBFC60006165A;
+					};
+				};
+			};
+			buildConfigurationList = 7AFE91C01A1DBFC60006165A /* Build configuration list for PBXProject "DeckBrew" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AFE91BC1A1DBFC60006165A;
+			productRefGroup = 7AFE91C61A1DBFC70006165A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AFE91C41A1DBFC60006165A /* DeckBrew */,
+				7AFE91DD1A1DBFC70006165A /* DeckBrewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AFE91C31A1DBFC60006165A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AFE91D41A1DBFC70006165A /* Main.storyboard in Resources */,
+				7AFE91D91A1DBFC70006165A /* LaunchScreen.xib in Resources */,
+				7AFE91D61A1DBFC70006165A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AFE91DC1A1DBFC70006165A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30EDB811577115C965BB31B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6D84747623307EA5266C5B4C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DeckBrewTests/Pods-DeckBrewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EF1D62B126AC0B34CB2D898 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB9A524551DA5AC65805DE0C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AFE91C11A1DBFC60006165A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1B8EE11A1DC2D10083431C /* DBRequest.m in Sources */,
+				7A1B8EF11A1DDEFD0083431C /* DBCardSetRequest.m in Sources */,
+				7AFE91D11A1DBFC70006165A /* ViewController.m in Sources */,
+				7A1B8EE81A1DC47C0083431C /* DBCardsRequest.m in Sources */,
+				7A32AAA51A34C328005ACA07 /* DBCardColorsRequest.m in Sources */,
+				7AFE91CE1A1DBFC70006165A /* AppDelegate.m in Sources */,
+				7AFE91CB1A1DBFC70006165A /* main.m in Sources */,
+				7A1B8EF41A1DE1280083431C /* DBCardTypesRequest.m in Sources */,
+				7A8A4C531A1F1CE700B489D1 /* DBCardSet.m in Sources */,
+				7A1B8EEE1A1DD4330083431C /* DBAPIWrapper.m in Sources */,
+				7A1B8EE51A1DC4460083431C /* DBCardRequest.m in Sources */,
+				7A32AAAD1A34C710005ACA07 /* DBCardSupertypesRequest.m in Sources */,
+				7A1B8EF71A1DE5F00083431C /* DBCardSubtypesRequest.m in Sources */,
+				7A32AAB01A34D4C4005ACA07 /* DBCardEdition.m in Sources */,
+				7A8A4C6E1A2096AA00B489D1 /* DBResponse.m in Sources */,
+				7A8A4C501A1EFFDE00B489D1 /* DBCard.m in Sources */,
+				7A1B8EEB1A1DC8260083431C /* DBCardSetsRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AFE91DA1A1DBFC70006165A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3919A31A211D4E005E68B9 /* DBSetsFixture.m in Sources */,
+				7A8A4C641A2063C200B489D1 /* DBCardsRequestSpec.m in Sources */,
+				7A8A4C681A2067B700B489D1 /* DBAPIWrapperSpec.m in Sources */,
+				7A8A4C601A2060DF00B489D1 /* DBCardTypesRequestSpec.m in Sources */,
+				7A8A4C5E1A205F5100B489D1 /* DBCardSetRequestSpec.m in Sources */,
+				7A39199E1A2109F1005E68B9 /* DBCardsFixture.m in Sources */,
+				7A3F11951A35419F000E82FA /* DBCardEditionTest.m in Sources */,
+				7A8A4C621A20617000B489D1 /* DBCardSubtypesRequestSpec.m in Sources */,
+				7A3919A01A210FA7005E68B9 /* DBCardSpec.m in Sources */,
+				7A3919A51A211EA6005E68B9 /* DBCardSetSpec.m in Sources */,
+				7A3919A81A212514005E68B9 /* DBResponseSpec.m in Sources */,
+				7A8A4C5C1A205E9B00B489D1 /* DBCardSetsRequestSpec.m in Sources */,
+				7A8A4C661A20671800B489D1 /* DBCardRequestSpec.m in Sources */,
+				7AE93F671A3534D900864A48 /* DBCardSupertypesRequestTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7AFE91E01A1DBFC70006165A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7AFE91C41A1DBFC60006165A /* DeckBrew */;
+			targetProxy = 7AFE91DF1A1DBFC70006165A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AFE91D21A1DBFC70006165A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AFE91D31A1DBFC70006165A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AFE91D71A1DBFC70006165A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AFE91D81A1DBFC70006165A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AFE91E61A1DBFC70006165A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7AFE91E71A1DBFC70006165A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AFE91E91A1DBFC70006165A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D1FE0FCB07981FBD6B2706 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeckBrew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = DeckBrew;
+			};
+			name = Debug;
+		};
+		7AFE91EA1A1DBFC70006165A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90FC183B66DAE3DF395D21F4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeckBrew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = DeckBrew;
+			};
+			name = Release;
+		};
+		7AFE91EC1A1DBFC70006165A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 276152B44D2EF1EDBBAC28C8 /* Pods-DeckBrewTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeckBrewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = DeckBrewTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckBrew.app/DeckBrew";
+			};
+			name = Debug;
+		};
+		7AFE91ED1A1DBFC70006165A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A2C53AFF48F894B19EF851 /* Pods-DeckBrewTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DeckBrewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = DeckBrewTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeckBrew.app/DeckBrew";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AFE91C01A1DBFC60006165A /* Build configuration list for PBXProject "DeckBrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AFE91E61A1DBFC70006165A /* Debug */,
+				7AFE91E71A1DBFC70006165A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AFE91E81A1DBFC70006165A /* Build configuration list for PBXNativeTarget "DeckBrew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AFE91E91A1DBFC70006165A /* Debug */,
+				7AFE91EA1A1DBFC70006165A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AFE91EB1A1DBFC70006165A /* Build configuration list for PBXNativeTarget "DeckBrewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AFE91EC1A1DBFC70006165A /* Debug */,
+				7AFE91ED1A1DBFC70006165A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AFE91BD1A1DBFC60006165A /* Project object */;
+}
