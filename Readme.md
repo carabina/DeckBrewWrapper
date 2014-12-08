@@ -20,16 +20,16 @@ DeckBrew Wrapper is an Objective-C client/wrapper for [Deck Brew](https://deckbr
 
 ## How to use it?
 
-[CocoaPods](http://cocoapods.org) is the recommended way to consume DeckBrew Wrapper
+[CocoaPods](http://cocoapods.org) is the recommended way to consume DeckBrew Wrapper.
 
-1. Add DeckBrewWrapper to your Podfile: ``pod 'DeckBrewWrapper'``.
+1. Add DeckBrewWrapper to your Podfile: ``pod 'DeckBrewWrapper'``
     1. Use ``pod search DeckBrewWrapper`` to search for specific versions of DeckBrewWrapper.
 1. Install the pod by running `pod install`.
-1. Import the DeckBrewWrapper's header file in your product ``#import <DeckBrewWrapper/DeckBrewWrapper.h>``
+1. Import the DeckBrewWrapper's header file in your project: ``#import <DeckBrewWrapper/DeckBrewWrapper.h>``
 
 ## API Wrapper
 
-``DBAPIWrapper`` doesn't have a custom init methods and can be easily initialized with alloc/init,
+``DBAPIWrapper`` doesn't have custom init methods and can be easily initialized with alloc/init,
 
 ```objective-c
 DBAPIWrapper *wrapper = [[DBAPIWrapper alloc] init];
@@ -50,6 +50,7 @@ When requests are submitted, ``responseObject`` can assume different types depen
 * ``NSArray`` of
     * ``DBCard`` objects
     * ``DBCardSet`` objects
+    * ``NSString`` objects
 
 All the possible scenarios are described below.
 
@@ -105,7 +106,7 @@ All the possible scenarios are described below.
 @end
 ```
 
-``DBCardSetsRequest`` has a single init methods. When requests are submitted, ``responseObject`` returns as an ``NSArray`` including ``DBCardSet`` objects.
+``DBCardSetsRequest`` has a single init methods. When requests are submitted, ``responseObject`` returns as an ``NSArray`` of ``DBCardSet`` objects.
 
 ```objective-c
 @interface DBCardSetsRequest : DBRequest
@@ -115,7 +116,7 @@ All the possible scenarios are described below.
 
 ### Example
 
-The example below shows a ``DBCardsRequest`` request using filters. It searches for cards with name *Shivan* (Shivan Dragon) on Fourth Edition and prints the card information and all the edition where that card can also be found.
+The example below shows a ``DBCardsRequest`` request using filters. It searches for cards with name *Shivan* on Fourth Edition and prints the card information and the edition where that card can also be found.
 
 ```objective-c
 NSDictionary *filter = @{DBFilterName : @"Shivan",
@@ -181,6 +182,8 @@ Output from the code above:
     )
 ```
 
+For more examples like this, clone this project and run the demo application.
+
 ## Objects
 
 As mentioned before, ``responseObject`` can assume different types depending on the request type. Possible types are:
@@ -190,6 +193,7 @@ As mentioned before, ``responseObject`` can assume different types depending on 
 * ``NSArray`` of
     * ``DBCard`` objects
     * ``DBCardSet`` objects
+    * ``NSString`` objects
 
 ### DBCard
 
