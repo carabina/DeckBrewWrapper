@@ -1,5 +1,4 @@
-# DeckBrew Wrapper
-
+![DeckBrew Wrapper](https://cloud.githubusercontent.com/assets/139272/5334731/3963837e-7e4d-11e4-9a72-e1061589c08a.jpg)
 [![Travis-CI](https://img.shields.io/travis/otaviocc/DeckBrewWrapper.svg)](https://travis-ci.org/otaviocc/DeckBrewWrapper) [![CocoaPod Version](https://img.shields.io/cocoapods/v/DeckBrewWrapper.svg)](http://cocoapods.org/?q=DeckBrewWrapper) [![CocoaPod Platform](https://img.shields.io/cocoapods/p/DeckBrewWrapper.svg)](http://cocoapods.org/?q=DeckBrewWrapper) [![License](https://img.shields.io/cocoapods/l/DeckBrewWrapper.svg)](http://cocoapods.org/?q=DeckBrewWrapper)
 
 DeckBrew Wrapper is an Objective-C client/wrapper for [Deck Brew](https://deckbrew.com/), an awesome [Magic the Gathering](http://magic.wizards.com/) API. It consists of an API wrapper responsible for the network calls (``DBAPIWrapper``), requests classes (subclasses of the ``DBRequest`` class), and classes for cards and card sets (``DBCard``, ``DBCardEdition``, and ``DBCardSet``).
