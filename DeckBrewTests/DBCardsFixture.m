@@ -28,6 +28,11 @@
                              @"flavor": @"\"I'm not sure which impresses me most, its thoroughness or its intensity.\"\n—Matoc, lavamancer",
                              @"number": @"174",
                              @"layout": @"normal",
+                             @"price" : @{
+                                     @"low": @89,
+                                     @"average" : @154,
+                                     @"high": @198
+                                     },
                              @"image_url": @"https://image.deckbrew.com/mtg/multiverseid/29965.jpg"
                              }
                          ]
@@ -62,6 +67,9 @@
                              @"multiverse_id": @158104,
                              @"number": @"132",
                              @"layout": @"normal",
+                             @"price" : @{
+                                     @"average" : @154
+                                     },
                              @"image_url": @"https://image.deckbrew.com/mtg/multiverseid/158104.jpg"
                              }
                          ]

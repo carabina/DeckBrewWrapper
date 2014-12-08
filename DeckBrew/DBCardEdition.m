@@ -1,4 +1,5 @@
 #import "DBCardEdition.h"
+#import "DBCardPrice.h"
 
 @interface DBCardEdition ()
 @property (nonatomic, strong, readwrite) NSString *set;
@@ -8,8 +9,13 @@
 @property (nonatomic, strong, readwrite) NSString *flavor;
 @property (nonatomic, strong, readwrite) NSString *number;
 @property (nonatomic, strong, readwrite) NSString *layout;
+@property (nonatomic, strong, readwrite) DBCardPrice *price;
 @property (nonatomic, strong, readwrite) NSURL *imageURL;
 @property (nonatomic, readwrite) NSInteger multiverseID;
+@end
+
+@interface DBCardPrice ()
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 @end
 
 @implementation DBCardEdition
@@ -29,6 +35,7 @@
         self.number = dictionary[@"number"];
         self.layout = dictionary[@"layout"];
         self.multiverseID = [dictionary[@"multiverse_id"] integerValue];
+        self.price = [self priceFromDictionary:dictionary[@"price"]];
         self.imageURL = ({
             NSString *urlString = dictionary[@"image_url"];
             NSURL *url = [NSURL URLWithString:urlString];
@@ -71,6 +78,19 @@
 - (NSUInteger)hash
 {
     return [self.set hash] ^ [@(self.multiverseID) hash];
+}
+
+#pragma mark - Private
+
+- (DBCardPrice *)priceFromDictionary:(NSDictionary *)dictionary
+{
+    DBCardPrice *price;
+    
+    if (dictionary) {
+        price = [[DBCardPrice alloc] initWithDictionary:dictionary];
+    }
+    
+    return price;
 }
 
 @end

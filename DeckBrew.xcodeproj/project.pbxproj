@@ -24,7 +24,8 @@
 		7A3919A31A211D4E005E68B9 /* DBSetsFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3919A21A211D4E005E68B9 /* DBSetsFixture.m */; };
 		7A3919A51A211EA6005E68B9 /* DBCardSetSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3919A41A211EA6005E68B9 /* DBCardSetSpec.m */; };
 		7A3919A81A212514005E68B9 /* DBResponseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3919A61A212466005E68B9 /* DBResponseSpec.m */; };
-		7A3F11951A35419F000E82FA /* DBCardEditionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F11941A35419F000E82FA /* DBCardEditionTest.m */; };
+		7A3F11951A35419F000E82FA /* DBCardEditionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3F11941A35419F000E82FA /* DBCardEditionSpec.m */; };
+		7A7F119D1A36404C0037CEA5 /* DBCardPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F119C1A36404C0037CEA5 /* DBCardPrice.m */; };
 		7A8A4C501A1EFFDE00B489D1 /* DBCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C4F1A1EFFDE00B489D1 /* DBCard.m */; };
 		7A8A4C531A1F1CE700B489D1 /* DBCardSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C521A1F1CE700B489D1 /* DBCardSet.m */; };
 		7A8A4C5C1A205E9B00B489D1 /* DBCardSetsRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C5B1A205E9B00B489D1 /* DBCardSetsRequestSpec.m */; };
@@ -35,7 +36,8 @@
 		7A8A4C661A20671800B489D1 /* DBCardRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C651A20671800B489D1 /* DBCardRequestSpec.m */; };
 		7A8A4C681A2067B700B489D1 /* DBAPIWrapperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C671A2067B700B489D1 /* DBAPIWrapperSpec.m */; };
 		7A8A4C6E1A2096AA00B489D1 /* DBResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A4C6D1A2096AA00B489D1 /* DBResponse.m */; };
-		7AE93F671A3534D900864A48 /* DBCardSupertypesRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE93F661A3534D900864A48 /* DBCardSupertypesRequestTest.m */; };
+		7ADCC61A1A3644B4000B5988 /* DBCardPriceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCC6191A3644B4000B5988 /* DBCardPriceSpec.m */; };
+		7AE93F671A3534D900864A48 /* DBCardSupertypesRequestSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AE93F661A3534D900864A48 /* DBCardSupertypesRequestSpec.m */; };
 		7AFE91CB1A1DBFC70006165A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91CA1A1DBFC70006165A /* main.m */; };
 		7AFE91CE1A1DBFC70006165A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91CD1A1DBFC70006165A /* AppDelegate.m */; };
 		7AFE91D11A1DBFC70006165A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFE91D01A1DBFC70006165A /* ViewController.m */; };
@@ -89,7 +91,9 @@
 		7A3919A21A211D4E005E68B9 /* DBSetsFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSetsFixture.m; sourceTree = "<group>"; };
 		7A3919A41A211EA6005E68B9 /* DBCardSetSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSetSpec.m; sourceTree = "<group>"; };
 		7A3919A61A212466005E68B9 /* DBResponseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBResponseSpec.m; sourceTree = "<group>"; };
-		7A3F11941A35419F000E82FA /* DBCardEditionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardEditionTest.m; sourceTree = "<group>"; };
+		7A3F11941A35419F000E82FA /* DBCardEditionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardEditionSpec.m; sourceTree = "<group>"; };
+		7A7F119B1A36404C0037CEA5 /* DBCardPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardPrice.h; sourceTree = "<group>"; };
+		7A7F119C1A36404C0037CEA5 /* DBCardPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardPrice.m; sourceTree = "<group>"; };
 		7A8A4C4E1A1EFFDE00B489D1 /* DBCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCard.h; sourceTree = "<group>"; };
 		7A8A4C4F1A1EFFDE00B489D1 /* DBCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCard.m; sourceTree = "<group>"; };
 		7A8A4C511A1F1CE700B489D1 /* DBCardSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBCardSet.h; sourceTree = "<group>"; };
@@ -104,7 +108,8 @@
 		7A8A4C6C1A2096AA00B489D1 /* DBResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBResponse.h; sourceTree = "<group>"; };
 		7A8A4C6D1A2096AA00B489D1 /* DBResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBResponse.m; sourceTree = "<group>"; };
 		7ABF410D1A26968E004F0667 /* DeckBrewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeckBrewWrapper.h; sourceTree = "<group>"; };
-		7AE93F661A3534D900864A48 /* DBCardSupertypesRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSupertypesRequestTest.m; sourceTree = "<group>"; };
+		7ADCC6191A3644B4000B5988 /* DBCardPriceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardPriceSpec.m; sourceTree = "<group>"; };
+		7AE93F661A3534D900864A48 /* DBCardSupertypesRequestSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCardSupertypesRequestSpec.m; sourceTree = "<group>"; };
 		7AFE91C51A1DBFC70006165A /* DeckBrew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckBrew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AFE91C91A1DBFC70006165A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AFE91CA1A1DBFC70006165A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -179,6 +184,8 @@
 				7A32AAA41A34C328005ACA07 /* DBCardColorsRequest.m */,
 				7A32AAAE1A34D4C4005ACA07 /* DBCardEdition.h */,
 				7A32AAAF1A34D4C4005ACA07 /* DBCardEdition.m */,
+				7A7F119B1A36404C0037CEA5 /* DBCardPrice.h */,
+				7A7F119C1A36404C0037CEA5 /* DBCardPrice.m */,
 				7A1B8EE31A1DC4450083431C /* DBCardRequest.h */,
 				7A1B8EE41A1DC4460083431C /* DBCardRequest.m */,
 				7A8A4C511A1F1CE700B489D1 /* DBCardSet.h */,
@@ -274,7 +281,8 @@
 			children = (
 				7A39199B1A2109CD005E68B9 /* Fixtures */,
 				7A8A4C671A2067B700B489D1 /* DBAPIWrapperSpec.m */,
-				7A3F11941A35419F000E82FA /* DBCardEditionTest.m */,
+				7A3F11941A35419F000E82FA /* DBCardEditionSpec.m */,
+				7ADCC6191A3644B4000B5988 /* DBCardPriceSpec.m */,
 				7A8A4C651A20671800B489D1 /* DBCardRequestSpec.m */,
 				7A8A4C5D1A205F5100B489D1 /* DBCardSetRequestSpec.m */,
 				7A3919A41A211EA6005E68B9 /* DBCardSetSpec.m */,
@@ -282,7 +290,7 @@
 				7A39199F1A210FA7005E68B9 /* DBCardSpec.m */,
 				7A8A4C631A2063C200B489D1 /* DBCardsRequestSpec.m */,
 				7A8A4C611A20617000B489D1 /* DBCardSubtypesRequestSpec.m */,
-				7AE93F661A3534D900864A48 /* DBCardSupertypesRequestTest.m */,
+				7AE93F661A3534D900864A48 /* DBCardSupertypesRequestSpec.m */,
 				7A8A4C5F1A2060DF00B489D1 /* DBCardTypesRequestSpec.m */,
 				7A3919A61A212466005E68B9 /* DBResponseSpec.m */,
 				7AFE91E21A1DBFC70006165A /* Supporting Files */,
@@ -467,6 +475,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A1B8EE11A1DC2D10083431C /* DBRequest.m in Sources */,
+				7A7F119D1A36404C0037CEA5 /* DBCardPrice.m in Sources */,
 				7A1B8EF11A1DDEFD0083431C /* DBCardSetRequest.m in Sources */,
 				7AFE91D11A1DBFC70006165A /* ViewController.m in Sources */,
 				7A1B8EE81A1DC47C0083431C /* DBCardsRequest.m in Sources */,
@@ -496,14 +505,15 @@
 				7A8A4C601A2060DF00B489D1 /* DBCardTypesRequestSpec.m in Sources */,
 				7A8A4C5E1A205F5100B489D1 /* DBCardSetRequestSpec.m in Sources */,
 				7A39199E1A2109F1005E68B9 /* DBCardsFixture.m in Sources */,
-				7A3F11951A35419F000E82FA /* DBCardEditionTest.m in Sources */,
+				7A3F11951A35419F000E82FA /* DBCardEditionSpec.m in Sources */,
+				7ADCC61A1A3644B4000B5988 /* DBCardPriceSpec.m in Sources */,
 				7A8A4C621A20617000B489D1 /* DBCardSubtypesRequestSpec.m in Sources */,
 				7A3919A01A210FA7005E68B9 /* DBCardSpec.m in Sources */,
 				7A3919A51A211EA6005E68B9 /* DBCardSetSpec.m in Sources */,
 				7A3919A81A212514005E68B9 /* DBResponseSpec.m in Sources */,
 				7A8A4C5C1A205E9B00B489D1 /* DBCardSetsRequestSpec.m in Sources */,
 				7A8A4C661A20671800B489D1 /* DBCardRequestSpec.m in Sources */,
-				7AE93F671A3534D900864A48 /* DBCardSupertypesRequestTest.m in Sources */,
+				7AE93F671A3534D900864A48 /* DBCardSupertypesRequestSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

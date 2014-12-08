@@ -18,6 +18,7 @@
 
 #import "DBCard.h"
 #import "DBCardEdition.h"
+#import "DBCardPrice.h"
 #import "DBCardSet.h"
 
 #endif // _DECKBREW_WRAPPER_
