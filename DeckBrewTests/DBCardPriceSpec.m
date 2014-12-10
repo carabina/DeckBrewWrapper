@@ -83,6 +83,42 @@ describe(@"DBCardPrice", ^{
             expect(price.high).to.equal(0);
         });
     });
+    
+    describe(@"isEqual:", ^{
+        __block DBCardPrice *cardPrice1, *cardPrice2, *cardPrice3;
+        __block NSDictionary *edition1Dict, *edition2Dict, *edition3Dict;
+        
+        beforeEach(^{
+            cards = [DBCardsFixture cardsFixture];
+
+            edition1Dict = ({
+                NSArray *editions = cards.firstObject[@"editions"];
+                editions.firstObject[@"price"];
+            });
+            
+            edition2Dict = ({
+                NSArray *editions = cards.lastObject[@"editions"];
+                editions.firstObject[@"price"];
+            });
+            
+            edition3Dict = ({
+                NSArray *editions = cards.lastObject[@"editions"];
+                editions.lastObject[@"price"];
+            });
+            
+            cardPrice1 = [[DBCardPrice alloc] initWithDictionary:edition1Dict];
+            cardPrice2 = [[DBCardPrice alloc] initWithDictionary:edition2Dict];
+            cardPrice3 = [[DBCardPrice alloc] initWithDictionary:edition3Dict];
+        });
+        
+        it(@"returns FALSE when comparing sets 1 and 2", ^{
+            expect([cardPrice1 isEqual:cardPrice2]).to.beFalsy();
+        });
+        
+        it(@"returns TRUE when comparing sets 1 and 3", ^{
+            expect([cardPrice1 isEqual:cardPrice3]).to.beTruthy();
+        });
+    });
 });
 
 SpecEnd

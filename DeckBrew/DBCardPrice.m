@@ -36,4 +36,18 @@
     return description.copy;
 }
 
+#pragma mark - Equality
+
+- (BOOL)isEqual:(id)object
+{
+    if (object == self) return YES;
+    if (!object || ![object isKindOfClass:[self class]]) return NO;
+    return [self isEqualCardPrice:object];
+}
+
+- (BOOL)isEqualCardPrice:(DBCardPrice *)cardPrice
+{
+    return (self.average == cardPrice.average);
+}
+
 @end
