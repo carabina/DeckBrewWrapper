@@ -38,7 +38,7 @@ describe(@"DBCardSet", ^{
         });
     });
     
-    describe(@"isEqual:", ^{
+    describe(@"-isEqual:", ^{
         __block DBCardSet *cardSet1, *cardSet2, *cardSet3;
         
         beforeEach(^{

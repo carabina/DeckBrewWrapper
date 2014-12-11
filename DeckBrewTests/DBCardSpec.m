@@ -69,7 +69,7 @@ describe(@"DBCard", ^{
         });
     });
     
-    describe(@"isEqual:", ^{
+    describe(@"-isEqual:", ^{
         __block DBCard *card1, *card2, *card3;
         
         beforeEach(^{

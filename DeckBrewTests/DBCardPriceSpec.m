@@ -84,24 +84,23 @@ describe(@"DBCardPrice", ^{
         });
     });
     
-    describe(@"isEqual:", ^{
+    describe(@"-isEqual:", ^{
         __block DBCardPrice *cardPrice1, *cardPrice2, *cardPrice3;
-        __block NSDictionary *edition1Dict, *edition2Dict, *edition3Dict;
         
         beforeEach(^{
             cards = [DBCardsFixture cardsFixture];
-
-            edition1Dict = ({
+            
+            NSDictionary *edition1Dict = ({
                 NSArray *editions = cards.firstObject[@"editions"];
                 editions.firstObject[@"price"];
             });
             
-            edition2Dict = ({
+            NSDictionary *edition2Dict = ({
                 NSArray *editions = cards.lastObject[@"editions"];
                 editions.firstObject[@"price"];
             });
             
-            edition3Dict = ({
+            NSDictionary *edition3Dict = ({
                 NSArray *editions = cards.lastObject[@"editions"];
                 editions.lastObject[@"price"];
             });
