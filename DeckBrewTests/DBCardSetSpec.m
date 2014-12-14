@@ -15,7 +15,7 @@ describe(@"DBCardSet", ^{
     __block DBCardSet *cardSet;
     __block NSArray *cardSets;
     
-    beforeEach(^{
+    beforeAll(^{
         cardSets = [DBFixture fixtureFromJSONFile:@"fixture_sets"];
         cardSet = [[DBCardSet alloc] initWithDictionary:cardSets.lastObject];
     });

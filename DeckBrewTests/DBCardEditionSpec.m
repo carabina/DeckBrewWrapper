@@ -16,9 +16,12 @@ describe(@"DBCardEdition", ^{
     __block DBCardEdition *edition;
     __block NSArray *cards;
 
+    beforeAll(^{
+        cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
+    });
+    
     context(@"complete data", ^{
         beforeEach(^{
-            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             NSArray *editions = cards.firstObject[@"editions"];
             
             edition = [[DBCardEdition alloc] initWithDictionary:editions.firstObject];
@@ -68,7 +71,6 @@ describe(@"DBCardEdition", ^{
 
     context(@"incomplete data", ^{
         beforeEach(^{
-            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             NSArray *editions = cards.lastObject[@"editions"];
             
             edition = [[DBCardEdition alloc] initWithDictionary:editions.firstObject];

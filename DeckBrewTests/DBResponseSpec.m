@@ -26,7 +26,7 @@ describe(@"DBResponse", ^{
     __block DBRequest *passedRequest;
     __block id passedObject;
     
-    beforeEach(^{
+    beforeAll(^{
         cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
         sets = [DBFixture fixtureFromJSONFile:@"fixture_sets"];
     });

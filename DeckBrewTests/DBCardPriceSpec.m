@@ -18,9 +18,12 @@ describe(@"DBCardPrice", ^{
     __block NSArray *editions;
     __block NSDictionary *edition;
     
+    beforeAll(^{
+        cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
+    });
+    
     context(@"complete data", ^{
         beforeEach(^{
-            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             editions = cards.firstObject[@"editions"];
             edition = editions.firstObject;
             
@@ -42,7 +45,6 @@ describe(@"DBCardPrice", ^{
     
     context(@"incomplete data", ^{
         beforeEach(^{
-            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             editions = cards.lastObject[@"editions"];
             edition = editions.lastObject;
             
@@ -64,7 +66,6 @@ describe(@"DBCardPrice", ^{
     
     context(@"inexistent data", ^{
         beforeEach(^{
-            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             editions = cards.lastObject[@"editions"];
             edition = editions.firstObject;
             
@@ -88,8 +89,6 @@ describe(@"DBCardPrice", ^{
         __block DBCardPrice *cardPrice1, *cardPrice2, *cardPrice3;
         
         beforeEach(^{
-            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
-            
             NSDictionary *edition1Dict = ({
                 NSArray *editions = cards.firstObject[@"editions"];
                 editions.firstObject[@"price"];

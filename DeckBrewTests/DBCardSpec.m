@@ -15,7 +15,7 @@ describe(@"DBCard", ^{
     __block DBCard *card;
     __block NSArray *cards;
     
-    beforeEach(^{
+    beforeAll(^{
         cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
     });
     
