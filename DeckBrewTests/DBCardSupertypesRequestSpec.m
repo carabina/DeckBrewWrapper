@@ -4,10 +4,6 @@
 #import <OCMock/OCMock.h>
 #import "DBCardSupertypesRequest.h"
 
-@interface DBCardSupertypesRequest (Test)
-
-@end
-
 SpecBegin(DBCardSupertypesRequest)
 
 describe(@"DBCardSupertypesRequest", ^{
