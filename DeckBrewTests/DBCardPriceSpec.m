@@ -32,7 +32,7 @@ describe(@"DBCardPrice", ^{
         });
 
         it(@"has the correct low average", ^{
-            expect(price.average).to.equal(154);
+            expect(price.median).to.equal(154);
         });
 
         it(@"has the correct low high", ^{
@@ -54,7 +54,7 @@ describe(@"DBCardPrice", ^{
         });
         
         it(@"has the correct low average", ^{
-            expect(price.average).to.equal(154);
+            expect(price.median).to.equal(154);
         });
         
         it(@"has the correct low high", ^{
@@ -76,7 +76,7 @@ describe(@"DBCardPrice", ^{
         });
         
         it(@"has the correct low average", ^{
-            expect(price.average).to.equal(0);
+            expect(price.median).to.equal(0);
         });
         
         it(@"has the correct low high", ^{

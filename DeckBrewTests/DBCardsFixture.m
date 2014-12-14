@@ -30,7 +30,7 @@
                              @"layout": @"normal",
                              @"price" : @{
                                      @"low": @89,
-                                     @"average" : @154,
+                                     @"median" : @154,
                                      @"high": @198
                                      },
                              @"image_url": @"https://image.deckbrew.com/mtg/multiverseid/29965.jpg"
@@ -68,7 +68,7 @@
                              @"number": @"132",
                              @"layout": @"normal",
                              @"price" : @{
-                                     @"average" : @154
+                                     @"median" : @154
                                      },
                              @"image_url": @"https://image.deckbrew.com/mtg/multiverseid/158104.jpg"
                              }

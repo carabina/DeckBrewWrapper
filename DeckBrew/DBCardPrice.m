@@ -2,7 +2,7 @@
 
 @interface DBCardPrice ()
 @property (nonatomic, readwrite) NSInteger low;
-@property (nonatomic, readwrite) NSInteger average;
+@property (nonatomic, readwrite) NSInteger median;
 @property (nonatomic, readwrite) NSInteger high;
 @end
 
@@ -16,7 +16,7 @@
     
     if (self) {
         self.low = [dictionary[@"low"] integerValue];
-        self.average = [dictionary[@"average"] integerValue];
+        self.median = [dictionary[@"median"] integerValue];
         self.high = [dictionary[@"high"] integerValue];
     }
     
@@ -29,7 +29,7 @@
     
     [description appendFormat:@"<DBCardPrice: %p", self];
     [description appendFormat:@", low: %@", @(self.low)];
-    [description appendFormat:@", average: %@", @(self.average)];
+    [description appendFormat:@", average: %@", @(self.median)];
     [description appendFormat:@", high: %@", @(self.high)];
     [description appendFormat:@">"];
     
@@ -47,7 +47,7 @@
 
 - (BOOL)isEqualCardPrice:(DBCardPrice *)cardPrice
 {
-    return (self.average == cardPrice.average);
+    return (self.median == cardPrice.median);
 }
 
 @end
