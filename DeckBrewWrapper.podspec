@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "DeckBrewWrapper"
-  s.version          = "0.1.0"
-  s.summary          = "DeckBrew Wrapper is an Objective-C client/wrapper for Deck Brew."
+  s.version          = "0.1.1"
+  s.summary          = "DeckBrew Wrapper is an Objective-C client/wrapper for Deck Brew API."
   s.description      = <<-DESC
-                       DeckBrew Wrapper is an Objective-C client/wrapper for Deck Brew, a Magic the Gathering API. It consists of an API wrapper, responsible for the network calls (``DBAPIWrapper``), requests classes (subclasses of the ``DBRequest`` class), and classes for cards and card sets (``DBCard``, ``DBCardEdition``, and ``DBCardSet``).
+                       DeckBrew Wrapper is an Objective-C client/wrapper for Deck Brew, an awesome Magic the Gathering API. It consists of an API wrapper, responsible for the network calls (``DBAPIWrapper``), requests classes (subclasses of the ``DBRequest`` class), and classes for cards and card sets (``DBCard``, ``DBCardEdition``, and ``DBCardSet``).
                        DESC
   s.homepage         = "https://github.com/otaviocc/DeckBrewWrapper"
   s.license          = 'MIT'
