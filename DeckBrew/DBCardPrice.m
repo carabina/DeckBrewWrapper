@@ -29,7 +29,7 @@
     
     [description appendFormat:@"<DBCardPrice: %p", self];
     [description appendFormat:@", low: %@", @(self.low)];
-    [description appendFormat:@", average: %@", @(self.median)];
+    [description appendFormat:@", median: %@", @(self.median)];
     [description appendFormat:@", high: %@", @(self.high)];
     [description appendFormat:@">"];
     
