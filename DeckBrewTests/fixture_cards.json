@@ -1,0 +1,84 @@
+[
+    {
+        "cmc": 8,
+        "colors": [
+            "red"
+        ],
+        "cost": "{6}{R}{R}",
+        "editions": [
+            {
+                "artist": "Mark Tedin",
+                "flavor": "\"I'm not sure which impresses me most, its thoroughness or its intensity.\"\n\u2014Matoc, lavamancer",
+                "image_url": "https://image.deckbrew.com/mtg/multiverseid/29965.jpg",
+                "layout": "normal",
+                "multiverse_id": 29965,
+                "number": "174",
+                "price": {
+                    "high": 198,
+                    "low": 89,
+                    "median": 154
+                },
+                "rarity": "rare",
+                "set": "Odyssey",
+                "set_id": "ODY"
+            }
+        ],
+        "id": "ashen-firebeast",
+        "name": "Ashen Firebeast",
+        "power": "6",
+        "subtypes": [
+            "beast",
+            "elemental"
+        ],
+        "text": "{1}{R}: Ashen Firebeast deals 1 damage to each creature without flying.",
+        "toughness": "6",
+        "types": [
+            "creature"
+        ]
+    },
+    {
+        "cmc": 5,
+        "colors": [
+            "red",
+            "white"
+        ],
+        "cost": "{2}{R/W}{R/W}{R/W}",
+        "editions": [
+            {
+                "artist": "Ralph Horsley",
+                "image_url": "https://image.deckbrew.com/mtg/multiverseid/205377.jpg",
+                "layout": "normal",
+                "multiverse_id": 205377,
+                "number": "97",
+                "rarity": "rare",
+                "set": "Planechase",
+                "set_id": "HOP"
+            },
+            {
+                "artist": "Ralph Horsley",
+                "image_url": "https://image.deckbrew.com/mtg/multiverseid/158104.jpg",
+                "layout": "normal",
+                "multiverse_id": 158104,
+                "number": "132",
+                "price": {
+                    "median": 154
+                },
+                "rarity": "rare",
+                "set": "Eventide",
+                "set_id": "EVE"
+            }
+        ],
+        "id": "balefire-liege",
+        "name": "Balefire Liege",
+        "power": "2",
+        "subtypes": [
+            "horror",
+            "spirit"
+        ],
+        "text": "Other red creatures you control get +1/+1.\nOther white creatures you control get +1/+1.\nWhenever you cast a red spell, Balefire Liege deals 3 damage to target player.\nWhenever you cast a white spell, you gain 3 life.",
+        "toughness": "4",
+        "types": [
+            "creature"
+        ]
+    }
+]

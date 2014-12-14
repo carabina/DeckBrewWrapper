@@ -3,7 +3,7 @@
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
 #import "DBCard.h"
-#import "DBCardsFixture.h"
+#import "DBFixture.h"
 
 @interface DBCard ()
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -16,7 +16,7 @@ describe(@"DBCard", ^{
     __block NSArray *cards;
     
     beforeEach(^{
-        cards = [DBCardsFixture cardsFixture];
+        cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
     });
     
     describe(@"properties", ^{

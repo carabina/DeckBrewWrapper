@@ -3,7 +3,7 @@
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
 #import "DBCardSet.h"
-#import "DBSetsFixture.h"
+#import "DBFixture.h"
 
 @interface DBCardSet ()
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -16,7 +16,7 @@ describe(@"DBCardSet", ^{
     __block NSArray *cardSets;
     
     beforeEach(^{
-        cardSets = [DBSetsFixture setsFixture];
+        cardSets = [DBFixture fixtureFromJSONFile:@"fixture_sets"];
         cardSet = [[DBCardSet alloc] initWithDictionary:cardSets.lastObject];
     });
     

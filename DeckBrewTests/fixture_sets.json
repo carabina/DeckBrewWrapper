@@ -1,0 +1,18 @@
+[
+    {
+        "border": "white",
+        "cards_url": "https://api.deckbrew.com/mtg/cards?set=4ED",
+        "id": "4ED",
+        "name": "Fourth Edition",
+        "type": "core",
+        "url": "https://api.deckbrew.com/mtg/sets/4ED"
+    },
+    {
+        "border": "black",
+        "cards_url": "https://api.deckbrew.com/mtg/cards?set=pFNM",
+        "id": "pFNM",
+        "name": "Friday Night Magic",
+        "type": "promo",
+        "url": "https://api.deckbrew.com/mtg/sets/pFNM"
+    }
+]

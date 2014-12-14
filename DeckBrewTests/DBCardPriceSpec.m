@@ -4,7 +4,7 @@
 #import <OCMock/OCMock.h>
 #import "DBCardPrice.h"
 #import "DBCardEdition.h"
-#import "DBCardsFixture.h"
+#import "DBFixture.h"
 
 @interface DBCardPrice ()
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -20,7 +20,7 @@ describe(@"DBCardPrice", ^{
     
     context(@"complete data", ^{
         beforeEach(^{
-            cards = [DBCardsFixture cardsFixture];
+            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             editions = cards.firstObject[@"editions"];
             edition = editions.firstObject;
             
@@ -31,18 +31,18 @@ describe(@"DBCardPrice", ^{
             expect(price.low).to.equal(89);
         });
 
-        it(@"has the correct low average", ^{
+        it(@"has the correct average price", ^{
             expect(price.median).to.equal(154);
         });
 
-        it(@"has the correct low high", ^{
+        it(@"has the correct high price", ^{
             expect(price.high).to.equal(198);
         });
     });
     
     context(@"incomplete data", ^{
         beforeEach(^{
-            cards = [DBCardsFixture cardsFixture];
+            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             editions = cards.lastObject[@"editions"];
             edition = editions.lastObject;
             
@@ -53,18 +53,18 @@ describe(@"DBCardPrice", ^{
             expect(price.low).to.equal(0);
         });
         
-        it(@"has the correct low average", ^{
+        it(@"has the correct average price", ^{
             expect(price.median).to.equal(154);
         });
         
-        it(@"has the correct low high", ^{
+        it(@"has the correct high price", ^{
             expect(price.high).to.equal(0);
         });
     });
     
     context(@"inexistent data", ^{
         beforeEach(^{
-            cards = [DBCardsFixture cardsFixture];
+            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             editions = cards.lastObject[@"editions"];
             edition = editions.firstObject;
             
@@ -75,11 +75,11 @@ describe(@"DBCardPrice", ^{
             expect(price.low).to.equal(0);
         });
         
-        it(@"has the correct low average", ^{
+        it(@"has the correct average price", ^{
             expect(price.median).to.equal(0);
         });
         
-        it(@"has the correct low high", ^{
+        it(@"has the correct high price", ^{
             expect(price.high).to.equal(0);
         });
     });
@@ -88,7 +88,7 @@ describe(@"DBCardPrice", ^{
         __block DBCardPrice *cardPrice1, *cardPrice2, *cardPrice3;
         
         beforeEach(^{
-            cards = [DBCardsFixture cardsFixture];
+            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             
             NSDictionary *edition1Dict = ({
                 NSArray *editions = cards.firstObject[@"editions"];

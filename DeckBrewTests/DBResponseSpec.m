@@ -6,8 +6,7 @@
 #import "DBRequest.h"
 #import "DBCard.h"
 #import "DBCardSet.h"
-#import "DBCardsFixture.h"
-#import "DBSetsFixture.h"
+#import "DBFixture.h"
 
 @interface DBCard ()
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -28,8 +27,8 @@ describe(@"DBResponse", ^{
     __block id passedObject;
     
     beforeEach(^{
-        cards = [DBCardsFixture cardsFixture];
-        sets = [DBSetsFixture setsFixture];
+        cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
+        sets = [DBFixture fixtureFromJSONFile:@"fixture_sets"];
     });
     
     context(@"DBResponseSerializerCard", ^{

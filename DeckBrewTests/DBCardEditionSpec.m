@@ -4,7 +4,7 @@
 #import <OCMock/OCMock.h>
 #import "DBCardEdition.h"
 #import "DBCardPrice.h"
-#import "DBCardsFixture.h"
+#import "DBFixture.h"
 
 @interface DBCardEdition ()
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -18,7 +18,7 @@ describe(@"DBCardEdition", ^{
 
     context(@"complete data", ^{
         beforeEach(^{
-            cards = [DBCardsFixture cardsFixture];
+            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             NSArray *editions = cards.firstObject[@"editions"];
             
             edition = [[DBCardEdition alloc] initWithDictionary:editions.firstObject];
@@ -68,7 +68,7 @@ describe(@"DBCardEdition", ^{
 
     context(@"incomplete data", ^{
         beforeEach(^{
-            cards = [DBCardsFixture cardsFixture];
+            cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
             NSArray *editions = cards.lastObject[@"editions"];
             
             edition = [[DBCardEdition alloc] initWithDictionary:editions.firstObject];
