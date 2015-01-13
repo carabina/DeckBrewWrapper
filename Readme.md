@@ -3,6 +3,8 @@
 
 DeckBrew Wrapper is an Objective-C client/wrapper for [Deck Brew](https://deckbrew.com/), an awesome [Magic the Gathering](http://magic.wizards.com/) API. It consists of an API wrapper responsible for the network calls (``DBAPIWrapper``), requests classes (subclasses of the ``DBRequest`` class), and classes for cards and card sets (``DBCard``, ``DBCardEdition``, and ``DBCardSet``).
 
+---
+
 * [API Wrapper](#api-wrapper)
 * Requests
     * [Card Colors](#card-colors)
@@ -16,6 +18,8 @@ DeckBrew Wrapper is an Objective-C client/wrapper for [Deck Brew](https://deckbr
     * [DBCardSet](#dbcardset)
 * [Contributing](#contributing)
 * [License](#license)
+
+---
 
 ## How to use it?
 
