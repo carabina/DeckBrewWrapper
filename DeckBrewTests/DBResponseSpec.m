@@ -2,11 +2,11 @@
 #define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
+#import <OCFixture/OCFixture.h>
 #import "DBResponse.h"
 #import "DBRequest.h"
 #import "DBCard.h"
 #import "DBCardSet.h"
-#import "DBFixture.h"
 
 @interface DBCard ()
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -27,8 +27,8 @@ describe(@"DBResponse", ^{
     __block id passedObject;
     
     beforeAll(^{
-        cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
-        sets = [DBFixture fixtureFromJSONFile:@"fixture_sets"];
+        cards = [OCFixture fixtureFromJSONFile:@"fixture_cards"];
+        sets = [OCFixture fixtureFromJSONFile:@"fixture_sets"];
     });
     
     context(@"DBResponseSerializerCard", ^{

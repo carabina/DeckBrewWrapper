@@ -2,9 +2,9 @@
 #define EXP_SHORTHAND
 #import <Expecta/Expecta.h>
 #import <OCMock/OCMock.h>
+#import <OCFixture/OCFixture.h>
 #import "DBCardEdition.h"
 #import "DBCardPrice.h"
-#import "DBFixture.h"
 
 @interface DBCardEdition ()
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary;
@@ -17,7 +17,7 @@ describe(@"DBCardEdition", ^{
     __block NSArray *cards;
 
     beforeAll(^{
-        cards = [DBFixture fixtureFromJSONFile:@"fixture_cards"];
+        cards = [OCFixture fixtureFromJSONFile:@"fixture_cards"];
     });
     
     context(@"complete data", ^{

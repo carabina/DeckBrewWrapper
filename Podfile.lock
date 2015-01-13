@@ -21,12 +21,14 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - Expecta (0.3.1)
-  - OCMock (3.1.1)
+  - OCFixture (0.1.0)
+  - OCMock (3.1.2)
   - Specta (0.3.0.beta1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.4)
   - Expecta (~> 0.3)
+  - OCFixture (~> 0.1.0)
   - OCMock (~> 3.1)
   - Specta (from `https://github.com/specta/specta.git`, tag `v0.3.0.beta1`)
 
@@ -43,7 +45,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
-  OCMock: f6cb8c162ab9d5620dddf411282c7b2c0ee78854
+  OCFixture: 03fcccda0c49c44984be82660aa28bc74cdb92c0
+  OCMock: ecdd510b73ef397f2f97274785c1e87fd147c49f
   Specta: 63e8ac8e07db6675c7096d37f77a266a1be4c02d
 
 COCOAPODS: 0.35.0
